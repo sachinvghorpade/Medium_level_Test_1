@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
+  <test thread-count="5" name="RETC_047(failed)">
+    <classes>
+      <class name="com.training.functional.tests.RETC_047">
+        <methods>
+          <include name="Functional_Test_RETC_047"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.functional.tests.RETC_047 -->
+    </classes>
+  </test> <!-- RETC_047(failed) -->
+  <test thread-count="5" name="RETC_050(failed)">
+    <classes>
+      <class name="com.training.functional.tests.RETC_050">
+        <methods>
+          <include name="Functional_Test_RETC_050"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.functional.tests.RETC_050 -->
+    </classes>
+  </test> <!-- RETC_050(failed) -->
+</suite> <!-- Failed suite [Sample test Suite] -->

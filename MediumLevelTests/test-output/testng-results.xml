@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample test Suite" duration-ms="698384" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:17:54Z">
+    <groups>
+    </groups>
+    <test name="Sample test" duration-ms="76881" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:07:33Z">
+      <class name="com.training.sanity.tests.LoginTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUp" is-config="true" duration-ms="54800" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:07:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="validLoginTest" duration-ms="19850" started-at="2019-03-19T13:07:11Z" finished-at="2019-03-19T13:07:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="tearDown" is-config="true" duration-ms="2181" started-at="2019-03-19T13:07:31Z" finished-at="2019-03-19T13:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.LoginTests -->
+    </test> <!-- Sample test -->
+    <test name="RETC_046" duration-ms="98720" started-at="2019-03-19T13:07:33Z" finished-at="2019-03-19T13:09:12Z">
+      <class name="com.training.functional.tests.RETC_046">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="setUp" is-config="true" duration-ms="52544" started-at="2019-03-19T13:07:33Z" finished-at="2019-03-19T13:08:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Functional_Test_RETC_046()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="Functional_Test_RETC_046" duration-ms="44088" started-at="2019-03-19T13:08:26Z" finished-at="2019-03-19T13:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_046 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="tearDown" is-config="true" duration-ms="2078" started-at="2019-03-19T13:09:10Z" finished-at="2019-03-19T13:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.functional.tests.RETC_046 -->
+    </test> <!-- RETC_046 -->
+    <test name="RETC_047" duration-ms="120618" started-at="2019-03-19T13:09:12Z" finished-at="2019-03-19T13:11:12Z">
+      <class name="com.training.functional.tests.RETC_047">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="setUp" is-config="true" duration-ms="67381" started-at="2019-03-19T13:09:12Z" finished-at="2019-03-19T13:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Functional_Test_RETC_047()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="Functional_Test_RETC_047" duration-ms="51207" started-at="2019-03-19T13:10:19Z" finished-at="2019-03-19T13:11:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_047 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="tearDown" is-config="true" duration-ms="2026" started-at="2019-03-19T13:11:10Z" finished-at="2019-03-19T13:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.functional.tests.RETC_047 -->
+    </test> <!-- RETC_047 -->
+    <test name="RETC_048" duration-ms="126889" started-at="2019-03-19T13:11:12Z" finished-at="2019-03-19T13:13:19Z">
+      <class name="com.training.functional.tests.RETC_048">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="setUp" is-config="true" duration-ms="60929" started-at="2019-03-19T13:11:12Z" finished-at="2019-03-19T13:12:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Functional_Test_RETC_048()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="Functional_Test_RETC_048" duration-ms="63854" started-at="2019-03-19T13:12:13Z" finished-at="2019-03-19T13:13:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_048 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="tearDown" is-config="true" duration-ms="2094" started-at="2019-03-19T13:13:17Z" finished-at="2019-03-19T13:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.functional.tests.RETC_048 -->
+    </test> <!-- RETC_048 -->
+    <test name="RETC_049" duration-ms="173972" started-at="2019-03-19T13:13:19Z" finished-at="2019-03-19T13:16:13Z">
+      <class name="com.training.functional.tests.RETC_049">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="setUp" is-config="true" duration-ms="125126" started-at="2019-03-19T13:13:19Z" finished-at="2019-03-19T13:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Functional_Test_RETC_049()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="Functional_Test_RETC_049" duration-ms="46743" started-at="2019-03-19T13:15:24Z" finished-at="2019-03-19T13:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_049 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="tearDown" is-config="true" duration-ms="2102" started-at="2019-03-19T13:16:11Z" finished-at="2019-03-19T13:16:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.functional.tests.RETC_049 -->
+    </test> <!-- RETC_049 -->
+    <test name="RETC_050" duration-ms="101124" started-at="2019-03-19T13:16:13Z" finished-at="2019-03-19T13:17:54Z">
+      <class name="com.training.functional.tests.RETC_050">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="setUp" is-config="true" duration-ms="63524" started-at="2019-03-19T13:16:13Z" finished-at="2019-03-19T13:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Functional_Test_RETC_050()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="Functional_Test_RETC_050" duration-ms="35579" started-at="2019-03-19T13:17:17Z" finished-at="2019-03-19T13:17:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_050 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="tearDown" is-config="true" duration-ms="2019" started-at="2019-03-19T13:17:52Z" finished-at="2019-03-19T13:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.functional.tests.RETC_050 -->
+    </test> <!-- RETC_050 -->
+  </suite> <!-- Sample test Suite -->
+</testng-results>

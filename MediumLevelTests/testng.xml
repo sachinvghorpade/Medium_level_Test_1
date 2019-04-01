@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample test Suite" parallel="none">
+	<test name="Sample test">
+		<classes>
+			<class name="com.training.sanity.tests.LoginTests" />
+		</classes>
+	</test>
+
+	<test name="RETC_046">
+		<classes>
+			<class name="com.training.functional.tests.RETC_046" />
+		</classes>
+	</test>
+
+	<test name="RETC_047">
+		<classes>
+			<class name="com.training.functional.tests.RETC_047" />
+		</classes>
+	</test>
+
+	<test name="RETC_048">
+		<classes>
+			<class name="com.training.functional.tests.RETC_048" />
+		</classes>
+	</test>
+
+	<test name="RETC_049">
+		<classes>
+			<class name="com.training.functional.tests.RETC_049" />
+		</classes>
+	</test>
+
+	<test name="RETC_050">
+		<classes>
+			<class name="com.training.functional.tests.RETC_050" />
+		</classes>
+	</test>
+
+
+</suite>	
