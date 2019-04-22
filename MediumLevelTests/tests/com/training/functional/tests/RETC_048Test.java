@@ -1,12 +1,11 @@
 package com.training.functional.tests;
 
 import java.io.FileInputStream;
-import java.util.List;
+
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -21,17 +20,17 @@ import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
 
 import com.training.pom.RETC_046_Properties_tab_POM;
-import com.training.pom.RETC_047_Add_New_Feature_POM;
+import com.training.pom.RETC_048_Add_New_Region_POM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RETC_047 {
+public class RETC_048Test {
 
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
 	private RETC_046_Properties_tab_POM propertiesTabPOM;
-	private RETC_047_Add_New_Feature_POM addNewFeaturePOM;
+	private RETC_048_Add_New_Region_POM addNewRegionPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 	private ExtentTest test;
@@ -45,11 +44,11 @@ public class RETC_047 {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver);
 		propertiesTabPOM = new RETC_046_Properties_tab_POM(driver);
-		addNewFeaturePOM = new RETC_047_Add_New_Feature_POM(driver);
+		addNewRegionPOM = new RETC_048_Add_New_Region_POM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		report = ExtentReportGenerator.generateReport();
-		test = report.startTest("Test Case name: RETC_047");
+		test = report.startTest("Test Case name: RETC_048Test");
 		// open the browser
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Pre-Condition 1:", "User launched the application by entering valid URL.");
@@ -57,7 +56,7 @@ public class RETC_047 {
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn();
 		test.log(LogStatus.INFO, "Pre-Condition 2:", "Admin logged in.");
-		screenShot.captureScreenShot("RETC_047_Pre-Condition2_Admin_Login_Success");
+		screenShot.captureScreenShot("RETC_048_Pre-Condition2_Admin_Login_Success");
 	}
 
 	@AfterTest
@@ -67,7 +66,7 @@ public class RETC_047 {
 	}
 
 	@Test
-	public void Functional_Test_RETC_047() throws Exception {
+	public void Functional_Test_RETC_048() throws Exception {
 		String expectedResult = "Post published. View post";
 		propertiesTabPOM.clickOnProperties();
 		test.log(LogStatus.INFO, "Test Step 1.", "Clicked on Properties tab");
@@ -75,19 +74,19 @@ public class RETC_047 {
 		propertiesTabPOM.clickButtonAddNew();
 		test.log(LogStatus.INFO, "Test Step 2.", "Clicked on Add New button");
 
-		addNewFeaturePOM.clickLinkAddNewFeature();
-		test.log(LogStatus.INFO, "Test Step 3.", "Clicked on Add new Feature link in Feature section");
+		addNewRegionPOM.clickLinkAddNewRegion();
+		test.log(LogStatus.INFO, "Test Step 3.", "Clicked on Add new Region link in Feature section");
 
-		addNewFeaturePOM.enterTextboxNewPropertyFeature("Best");
+		addNewRegionPOM.enterTextboxNewPropertyRegione("Electronic City");
 		test.log(LogStatus.INFO, "Test Step 4.", "Entered valid details in Textbox");
 
-		addNewFeaturePOM.selectDropdownNewPropertyFeature();
-		test.log(LogStatus.INFO, "Test Step 5.", "Selected valid details in Parent Feature list box");
+		addNewRegionPOM.selectDropdownNewPropertyRegion();
+		test.log(LogStatus.INFO, "Test Step 5.", "Selected valid details in Parent Region list box");
 
-		addNewFeaturePOM.clickButtonAddNewFeature();
-		test.log(LogStatus.INFO, "Test Step 6.", "Clicked on Add New Feature button");
+		addNewRegionPOM.clickButtonAddNewRegion();
+		test.log(LogStatus.INFO, "Test Step 6.", "Clicked on Add New Region button");
 
-		addNewFeaturePOM.refreshPage();
+		addNewRegionPOM.refreshPage();
 		test.log(LogStatus.INFO, "Test Step 7.", "Clicked on Refresh button from keyboard");
 
 		propertiesTabPOM.enterTitleTextBox("prestige");
@@ -96,11 +95,11 @@ public class RETC_047 {
 		propertiesTabPOM.enterContentTextArea("home town");
 		test.log(LogStatus.INFO, "Test Step 9.", " Entered valid credentials in textbox");
 
-		addNewFeaturePOM.clickCheckboxInterior();
-		test.log(LogStatus.INFO, "Test Step 10(i).", "Clicked on checkbox beside created feature(Interior)");
+		addNewRegionPOM.clickCheckboxWestBangalore();
+		test.log(LogStatus.INFO, "Test Step 10(i).", "Clicked on checkbox(WestBangalore) beside created region");
 
-		addNewFeaturePOM.clickCheckBoxBest();
-		test.log(LogStatus.INFO, "Test Step 10(ii).", "Clicked on checkbox beside created feature(Best)");
+		addNewRegionPOM.clickCheckboxElectronicCity();
+		test.log(LogStatus.INFO, "Test Step 10(ii).", "Clicked on checkbox(ElectronicCity) beside created region");
 
 		propertiesTabPOM.clickButtonPublish();
 		test.log(LogStatus.INFO, "Test Step 11.", "Clicked on Publish button");
@@ -113,7 +112,7 @@ public class RETC_047 {
 			test.log(LogStatus.FAIL, "Test Failed", "Post published. View post message is not displayed");
 		}
 
-		screenShot.captureScreenShot("RETC_047_Step11__Post_published");
+		screenShot.captureScreenShot("RETC_048_Step11_Post_published");
 		Assert.assertEquals(actualResult, expectedResult);
 		report.endTest(test);
 		report.flush();

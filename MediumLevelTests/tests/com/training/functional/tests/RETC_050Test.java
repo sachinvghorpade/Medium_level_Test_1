@@ -26,7 +26,7 @@ import com.training.pom.RETC_050_Add_Property_Into_Trash_POM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RETC_050 {
+public class RETC_050Test {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -55,7 +55,7 @@ public class RETC_050 {
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		report = ExtentReportGenerator.generateReport();
-		test = report.startTest("Test Case name: RETC_050");
+		test = report.startTest("Test Case name: RETC_050Test");
 		// open the browser
 		driver.get(baseUrl);
 

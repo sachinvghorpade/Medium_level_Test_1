@@ -26,7 +26,7 @@ import com.training.pom.RETC_049_Reply_To_UserPost_By_Admin_POM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RETC_049 {
+public class RETC_049Test {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -48,7 +48,7 @@ public class RETC_049 {
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		report = ExtentReportGenerator.generateReport();
-		test = report.startTest("Test Case name: RETC_049");
+		test = report.startTest("Test Case name: RETC_049Test");
 		// open the browser
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Pre-Condition 1:", "User launched the application by entering valid URL.");
